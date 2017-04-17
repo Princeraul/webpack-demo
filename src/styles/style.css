@@ -2,8 +2,5 @@
     content: 'this is test';
     width: 250px;
     height: 250px;
-}
-
-.addTest {
-    content: 'this is addText';
+    color: blue;
 }

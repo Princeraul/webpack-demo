@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import moment from 'moment';
-import './src/style.css';
+import './styles/style.css';
 
 function component() {
     const element = document.createElement('section');

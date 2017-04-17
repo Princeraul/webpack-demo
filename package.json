@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "webpack --env=dev --progress --profile --colors",
-    "build:dist": "webpack --env=prod --progress --profile --colors",
+    "start": "webpack-dev-server --hot --inline --env=production",
+    "develop": "webpack --env=production --progress --profile --colors",
+    "build": "webpack --env=release --progress --profile --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -30,9 +31,12 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "webpack": "^2.3.3",
+    "webpack-manifest-plugin": "^1.1.0",
     "webpack-merge": "^4.1.0"
   }
 }
